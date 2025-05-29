@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Chong Chua</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.5;
+        }
+        header {
+            background: linear-gradient(90deg, #1d3557, #457b9d);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .menu-icon {
+            font-size: 2em;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .menu-content {
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 10px;
+            z-index: 1000;
+        }
+        .menu-content a {
+            display: block;
+            padding: 8px 12px;
+            color: #1d3557;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu-content a:hover {
+            background-color: #f1f1f1;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: #fff;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #457b9d;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #1d3557;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        a {
+            color: #1d3557;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        a.doi {
+            font-size: 0.9em;
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ping Chong Chua</h1>
+    <!-- <p>Scientist at IHPC, A*STAR, Singapore</p> -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="menu-content" id="dropdownMenu">
+        <a href="index.html">Main</a>
+        <a href="miscellaneous.html">Miscellaneous</a>
+    </div>
+</header>
+
+<main>
+    <section id="bio">
+        <h2>About Me</h2>
+        <div style="display: flex; align-items: flex-start; gap: 20px;">
+            <img src="myself.jpg" alt="Ping Chong Chua" style="width: 100px; height: auto; border-radius: 8px;">
+            <p>
+                I am a Scientist at the Institute of High Performance Computing (IHPC), Agency for Science, Technology and Research (A*STAR), Singapore. 
+                My research interests lie in the application of optimization and AI techniques to create decision support systems for use case applications, with a particular focus on manufacturing and maritime sectors.
+                My current work includes harbour craft scheduling and maritime predictive maintenance.
+            </p>
+        </div>
+    </section>
+
+    <section id="employment">
+        <h2>Employment History</h2>
+        <ul>
+            <li>
+                Scientist, Institute of High Performance Computing (IHPC), A*STAR, Singapore,<br>
+                02.2023 - Present
+            </li>
+            <li>
+                Research Engineer, Singapore Institute of Manufacturing Technology (SIMTech), A*STAR, Singapore,<br>
+                06.2014 - 01.2019
+            </li>
+            <!-- Add more roles here -->
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <b>Ph.D.</b>, School of Mechanical and Aerospace Engineering, Nanyang Technological University, 2019 - 2023<br>
+                (Supervisors: <a href="https://dr.ntu.edu.sg/entities/person/Moon-Seung-Ki" target="_blank">A/P Moon Seung Ki</a> and <a href="https://www.linkedin.com/in/yen-ting-ng-6aaa6b28/" target="_blank">Dr Ng Yen Ting</a>)
+            </li>
+            <li><b>M.Sc.</b>, Industrial and Systems Engineering, National University of Singapore, 2015 - 2018</li>
+            <li><b>B.Sc. (Hons)</b>, Applied Mathematics, Faculty of Science, National University of Singapore, Singapore, 2010 - 2014</li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <ul>
+            <li>
+                <strong>Chua, P. C.</strong>, Chieng, R., Wang, R., Lee, K., Xu, H., Fu, X., and Yan, R. (2025). Development of A Knowledge-based Noise Test for Robustness of Vessel Fuel Consumption Prediction Models. <em>Maritime Policy & Management</em>. (Under review)
+            </li>
+            <li>
+                Lee, J., <strong>Chua, P. C.</strong>, Liu, B., Moon, S. K., and Lopez, M. (2025). A hybrid data-driven optimization and decision-making approach for a digital twin environment: Towards customizing production platforms. <em>International Journal of Production Economics</em>, 279, 109447.
+                DOI: <a class="doi" href="https://doi.org/10.1016/j.ijpe.2024.109447" target="_blank">10.1016/j.ijpe.2024.109447</a>
+            </li>
+            <li>
+                Lin, Y. H., <strong>Chua, P. C.</strong>, Yin, X. F., Wang, Z., Li, N., Xiao, Z., Fu, X., and Qin, Z. (2024) Big data-driven booking consolidation and scheduling of launching service in Singapore Port. <em>2024 IEEE Conference on Artificial Intelligence (CAI)</em>, Singapore, Singapore, 272-277.
+                DOI: <a class="doi" href="https://doi.org/10.1109/CAI59869.2024.00060" target="_blank">10.1109/CAI59869.2024.00060</a>
+            </li>
+            <li>
+                <strong>Chua, P. C.</strong>, Moon, S. K., Ng, Y. T., and Ng, H. Y. (2024). Chapter Six - Digital twin-based decision support system for planning and scheduling. <em>Digital Manufacturing: Key Elements of a Digital Factory</em>, 213-245, Elsevier.
+                DOI: <a class="doi" href="https://doi.org/10.1016/B978-0-443-13812-6.00001-4" target="_blank">10.1016/B978-0-443-13812-6.00001-4</a>
+            </li>
+            <li>
+                <strong>Chua, P. C.</strong>, Moon, S. K., Ng, Y. T., and Lopez, M. (2023). Strategic Production Process Design With Additive Manufacturing in a Make-to-Stock Environment. <em>J. Manuf. Sci. Eng.</em> 145(11), 111009.
+                DOI: <a class="doi" href="https://doi.org/10.1115/1.4063285" target="_blank">10.1115/1.4063285</a>
+            </li>
+            <li>
+                Lee, J., <strong>Chua, P. C.</strong>, Chen, L., Ng, P. H. N., Kim, Y., Wu, Q., Jeon, S., Jung, J., Chang, S., and Moon, S. K. (2023). Key Enabling Technologies for Smart Factory in Automotive Industry: Status and Applications. <em>International Journal of Precision Engineering and Manufacturing-Smart Technology</em>, 1(1), 93-105. 
+                DOI: <a class="doi" href="https://doi.org/10.57062/ijpem-st.2022.0017" target="_blank">10.57062/ijpem-st.2022.0017</a>
+            </li>
+            <li>
+                <strong>Chua, P. C.</strong>, Moon, S. K., Ng, Y. T., and Ng, H. Y. (2022). A Surrogate Model to Predict Production Performance in Digital Twin-Based Smart Manufacturing. <em>J. Comput. Inf. Sci. Eng.</em> 22(3), 031007.
+                DOI: <a class="doi" href="https://doi.org/10.1115/1.4053038" target="_blank">10.1115/1.4053038</a>
+            </li>
+            <li>
+                Joo, B. J., Chua, T. J., Cai, T. X., and <strong>Chua, P. C.</strong> (2019). Coordination-based reactive resource-constrained project scheduling. <em>Procedia CIRP</em>, 81, 51-56.
+                DOI: <a class="doi" href="https://doi.org/10.1016/j.procir.2019.03.010" target="_blank">10.1016/j.procir.2019.03.010</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="awards">
+        <h2>Awards</h2>
+        <ul>
+            <li>Outstanding Presenter Award, <em>Precision Engineering and Sustainable Manufacturing (PRESM) 2019</em>,<br>Da Nang, Vietnam, 2019</li>
+            <li>Recipient, <em>A*STAR Graduate Scholarship</em>, 2018</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        Please feel free to contact me for any potential collaboration opportunities.
+        <p>
+            <a href="mailto:chua.pingchong@gmail.com">
+                <i class="fas fa-envelope fa-2x"></i>
+            </a>
+            &nbsp;&nbsp;
+            <a href="www.linkedin.com/in/chua-ping-chong-408b9277" target="_blank">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            &nbsp;&nbsp;
+            <a href="https://scholar.google.com/citations?user=99J0j5IAAAAJ&hl=en" target="_blank">
+                <i class="fab fa-google fa-2x"></i>
+            </a>
+            &nbsp;&nbsp;
+            <a href="https://orcid.org/0000-0002-4212-8075" target="_blank">
+                <i class="fab fa-orcid fa-2x"></i>
+            </a>
+        </p>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 Ping Chong Chua. All rights reserved.
+</footer>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById('dropdownMenu');
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
+}
+</script>
+
+</body>
+</html>
